@@ -1,0 +1,28 @@
+footer.footer
+    .footer__row
+        .footer__col
+            .footer__text
+                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+        .footer__col
+            .footer__menu
+                nav.menu.menu_full-screen
+                    ul.menu__list
+                        each item in ['Мои работы', 'Обо мне', 'Блог']
+                            li.menu__item
+                                a(href="").menu__link #{item}
+            .footer__socials
+                ul.socials
+                    .socials__container.socials__footer
+                        svg.icon(width='50', height='50')
+                            use(xlink:href='assets/images/sprite.svg#git')
+                        svg.icon(width='50', height='50')
+                            use(xlink:href='assets/images/sprite.svg#in')
+                        svg.icon(width='50', height='50')
+                            use(xlink:href='assets/images/sprite.svg#vk')
+        .footer__col
+            .footer__review 
+                p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. 
+                b — Martin Golding 
+
+    .footer__row-copyright
+        p © Владимир Астахов | Создано с любовью в LoftSchool | 2016

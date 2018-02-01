@@ -1,0 +1,19 @@
+
+
+    // resolutions
+    $desktop: 1200px;
+    $laptop: 992px;
+    $ipad: 768px;
+    $phones: 480px;
+
+    $dark:#373e42;
+    $grey: #566358;
+    $ligrey: #e1e4d7;
+    $beige: #ebefe2;
+    $green:#6c9c5a;
+
+    @mixin cover(){
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
