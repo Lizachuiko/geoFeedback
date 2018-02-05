@@ -22,12 +22,12 @@ const paths = {
         src: 'src/templates/**/*.pug'
     },
     styles: {
-        src: 'src/styles/**/*.scss',
-        dest: 'build/assets/styles/'
+        src: 'src/styles/**/*.*',
+        dest: 'build/css/'
     },
     images: {
         src: 'src/images/**/*.*',
-        dest: 'build/assets/images/'
+        dest: 'build/img/'
     },
     fonts: {
         src: 'src/fonts/*.*',
@@ -35,7 +35,7 @@ const paths = {
     },
     scripts: {
         src: 'src/scripts/**/*.js',
-        dest: 'build/assets/scripts/'
+        dest: 'build/js/'
     }
 }
 
@@ -48,7 +48,7 @@ function templates() {
 
 // scss
 function styles() {
-    return gulp.src('./src/styles/app.scss')
+    return gulp.src('./src/styles/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: require('node-normalize-scss').includePaths,
@@ -56,7 +56,7 @@ function styles() {
           }))
         .pipe(sourcemaps.write())
         .pipe(stripCssComments())
-        .pipe(rename({suffix: '.min'}))
+        // .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.styles.dest))
         .pipe(autoprefixer({
             browsers: ['> 5%'],

@@ -1,0 +1,59 @@
+
+@function rem($px) {
+    @return $px / 16px+0rem;
+  }
+
+// @import "normalize";
+
+
+@import 'common/media';
+
+
+@import 'common/mixins';
+@import 'layout/adjustment';
+@import 'layout/fonts';
+
+
+@font-face {
+  font-family: 'GraphikLCG';
+  src: url("GraphikLCG-Regular-otf.css") format("otf"), url("GraphikLCG-Regular_rubl-ttf.css") format("ttf"), url("GraphikLCG-Regular_rubl-woff.css") format("woff"); }
+
+@font-face {
+  font-family: 'GraphikLCG-Medium';
+  src: url("GraphikLCG-Medium-otf.css") format("otf"), url("GraphikLCG-Medium_rubl-ttf.css") format("ttf"), url("GraphikLCG-Medium_rubl-woff.css") format("woff"); }
+
+@font-face {
+  font-family: 'GraphikLCG-Black';
+  src: url("GraphikLCG-Black-otf.css") format("otf"), url("GraphikLCG-Black_rubl-ttf.css") format("ttf"), url("GraphikLCG-Black_rubl-woff.css") format("woff"); }
+
+
+  html {
+    font-size: 14px; }
+
+  html,
+  body {
+    height: 100%; }
+
+  body {
+    font-size: rem(16px);
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    position: relative; }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    font-weight: normal; }
+
+
+
+.wrapper {
+  background-color: aqua;
+  width: 100px;
+
+  height: 100px;
+}

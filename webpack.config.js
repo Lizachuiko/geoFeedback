@@ -4,7 +4,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const config = {
     output: {
-        filename: 'bundle.js'
+        filename: 'main.js'
     },
     module: {
         loaders: [
@@ -24,9 +24,9 @@ const config = {
     },
     devtool:"source-map",
     plugins: [
-        new UglifyJSPlugin({
-            sourceMap: true
-        }),
+        // new UglifyJSPlugin({
+        //     sourceMap: true
+        // }),
         new StyleLintPlugin({
             configFile: './.stylelintrc'
         }),
