@@ -34,11 +34,7 @@
   body {
     height: 100%; }
 
-  body {
-    font-size: rem(16px);
-    line-height: 1.42;
-    -webkit-font-smoothing: antialiased;
-    position: relative; }
+
 
   h1,
   h2,
@@ -50,10 +46,41 @@
     font-weight: normal; }
 
 
+    ul {
+      padding: 0;
+      margin: 0; }
 
-.wrapper {
-  background-color: aqua;
-  width: 100px;
+    li {
+      list-style: none; }
 
-  height: 100px;
-}
+    * {
+      box-sizing: border-box; }
+
+
+
+body {
+  font-family: 'GraphikLCG-Regular';
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000; }
+
+  h2 {
+    font-family: 'GraphikLCG-Black', sans-serif;
+    object-fit: contain;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.22;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #202020;
+    margin: 18px auto; }
+
+  .wrapper {
+    background-color: aqua;
+    width: 100px;
+
+    height: 100px;
+  }
