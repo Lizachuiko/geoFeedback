@@ -1,7 +1,7 @@
 
 @function rem($px) {
-    @return $px / 16px+0rem;
-  }
+  @return $px / 16px+0rem;
+}
 
 // @import "normalize";
 
@@ -15,72 +15,62 @@
 
 
 @font-face {
-  font-family: 'GraphikLCG';
-  src: url("../assets/fonts/GraphikLCG-Regular-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Regular_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Regular_rubl-woff.css") format("woff"); }
+font-family: 'GraphikLCG';
+src: url("../assets/fonts/GraphikLCG-Regular-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Regular_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Regular_rubl-woff.css") format("woff"); }
 
 @font-face {
-  font-family: 'GraphikLCG-Medium';
-  src: url("../assets/fonts/GraphikLCG-Medium-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Medium_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Medium_rubl-woff.css") format("woff"); }
+font-family: 'GraphikLCG-Medium';
+src: url("../assets/fonts/GraphikLCG-Medium-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Medium_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Medium_rubl-woff.css") format("woff"); }
 
 @font-face {
-  font-family: 'GraphikLCG-Black';
-  src: url("../assets/fonts/GraphikLCG-Black-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Black_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Black_rubl-woff.css") format("woff"); }
-
-
-  html {
-    font-size: 14px; }
-
-  html,
-  body {
-    height: 100%; }
+font-family: 'GraphikLCG-Black';
+src: url("../assets/fonts/GraphikLCG-Black-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Black_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Black_rubl-woff.css") format("woff"); }
 
 
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 0;
-    font-weight: normal; }
 
-
-    ul {
-      padding: 0;
-      margin: 0; }
-
-    li {
-      list-style: none; }
-
-    * {
-      box-sizing: border-box; }
-
-
-
+html,
 body {
-  font-family: 'GraphikLCG-Regular';
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-  font-size: 15px;
-  line-height: 1.2;
-  text-align: center;
-  color: #000000; }
+  height: 100%; }
 
-  h2 {
+#static-page-content {
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  h1{
+    width: 264px;
     font-family: 'GraphikLCG-Black', sans-serif;
-    object-fit: contain;
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 1.22;
-    letter-spacing: 0.4px;
+    font-size: 32px;
+    line-height: 1.19;
     text-align: left;
-    color: #202020;
-    margin: 18px auto; }
-
-  .wrapper {
-    background-color: aqua;
-    width: 100px;
-
-    height: 100px;
+    color: #ffffff;
   }
+  h2,h3 {
+    width: 728.5px;
+    height: 58px;
+    font-family: 'GraphikLCG-Black' sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+  }
+  p {
+    font-family: 'GraphikLCG';
+    font-size: 15px;
+    text-align: left;
+    color: #000000;
+  }
+}
+
+
+
+ul {
+display: block;
+padding: 0;
+margin: 0; }
+
+li {
+display: block;
+list-style: none; }
+
+* {
+box-sizing: border-box; }
