@@ -31,7 +31,7 @@ const paths = {
     },
     fonts: {
         src: 'src/fonts/*.*',
-        dest: 'build/assets/fonts/'
+        dest: 'build/css/'
     },
     scripts: {
         src: 'src/scripts/**/*.js',
