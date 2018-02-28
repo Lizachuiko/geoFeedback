@@ -16,15 +16,15 @@
 
 @font-face {
 font-family: 'GraphikLCG';
-src: url("../assets/fonts/GraphikLCG-Regular-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Regular_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Regular_rubl-woff.css") format("woff"); }
+src: url("GraphikLCG-Regular-otf.css") format("otf"), url("GraphikLCG-Regular_rubl-ttf.css") format("ttf"), url("GraphikLCG-Regular_rubl-woff.css") format("woff"); }
 
 @font-face {
 font-family: 'GraphikLCG-Medium';
-src: url("../assets/fonts/GraphikLCG-Medium-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Medium_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Medium_rubl-woff.css") format("woff"); }
+src: url("GraphikLCG-Medium-otf.css") format("otf"), url("GraphikLCG-Medium_rubl-ttf.css") format("ttf"), url("GraphikLCG-Medium_rubl-woff.css") format("woff"); }
 
 @font-face {
 font-family: 'GraphikLCG-Black';
-src: url("../assets/fonts/GraphikLCG-Black-otf.css") format("otf"), url("../assets/fonts/GraphikLCG-Black_rubl-ttf.css") format("ttf"), url("../assets/fonts/GraphikLCG-Black_rubl-woff.css") format("woff"); }
+src: url("GraphikLCG-Black-otf.css") format("otf"), url("GraphikLCG-Black_rubl-ttf.css") format("ttf"), url("GraphikLCG-Black_rubl-woff.css") format("woff"); }
 
 
 
@@ -72,4 +72,5 @@ list-style: none; }
 
 * {
 box-sizing: border-box; }
+  
   }
