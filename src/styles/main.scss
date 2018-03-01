@@ -32,6 +32,12 @@ src: url("GraphikLCG-Black-otf.css") format("otf"), url("GraphikLCG-Black_rubl-t
 html,
 body {
   height: 100%; }
+// !!! for full screen width
+.container.static-page-wrapper {
+            margin: 0;
+    width: 100%;
+    padding: 0;
+          }
 
 #static-page-content {
   font-size: 14px;
