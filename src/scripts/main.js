@@ -1,6 +1,6 @@
 
 jQuery( document ).ready(function(){
-	if( 'devicePixelRatio' in window && window.devicePixelRatio > 1.5 ){
+	if( 'devicePixelRatio' in window && window.devicePixelRatio > 1 ){
 	  var img_to_replace = jQuery( '#static-page-content img' ).get();
 
 	  for (var i=0,l=img_to_replace.length; i<l; i++) {
