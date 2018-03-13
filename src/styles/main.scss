@@ -41,11 +41,10 @@ margin: 0;}
           }
 
 #static-page-content {
-  font-size: 14px;
   height: 100%;
   width: 100%;
   h1{
-    font-family: 'GraphikLCG-Black', sans-serif;
+    font-family: 'GraphikLCG-Black', 'sans-serif';
     font-size: 32px;
     line-height: 1.19;
     text-align: left;
@@ -53,13 +52,13 @@ margin: 0;}
   }
   h2,h3 {
     height: 58px;
-    font-family: 'GraphikLCG-Black', sans-serif;
+    font-family: 'GraphikLCG-Black', 'sans-serif';
     font-size: 24px;
     text-align: left;
     color: #000000;
   }
   p {
-    font-family: 'GraphikLCG';
+    font-family: 'GraphikLCG', 'sans-serif';
     font-size: 15px;
     text-align: left;
     color: #000000;
