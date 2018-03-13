@@ -1,11 +1,11 @@
-@mixin ipad {
-    @media screen and (max-width: $ipad) {
-      @content;
-    }
-  }
+// @mixin ipad {
+//     @media screen and (max-width: $ipad) {
+//       @content;
+//     }
+//   }
 
-  @mixin phones {
-    @media screen and (max-width: $phones) {
-      @content;
-    }
-  }
+//   @mixin phones {
+//     @media screen and (max-width: $phones) {
+//       @content;
+//     }
+//   }
