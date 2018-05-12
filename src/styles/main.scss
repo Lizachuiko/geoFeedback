@@ -13,37 +13,13 @@
 @import 'layout/adjustment';
 @import 'layout/fonts';
 
-
-@font-face {
-font-family: 'GraphikLCG';
-src: url("GraphikLCG-Regular-otf.css") format("otf"), url("GraphikLCG-Regular_rubl-ttf.css") format("ttf"), url("GraphikLCG-Regular_rubl-woff.css") format("woff"); }
-
-@font-face {
-font-family: 'GraphikLCG-Medium';
-src: url("GraphikLCG-Medium-otf.css") format("otf"), url("GraphikLCG-Medium_rubl-ttf.css") format("ttf"), url("GraphikLCG-Medium_rubl-woff.css") format("woff"); }
-
-@font-face {
-font-family: 'GraphikLCG-Black';
-src: url("GraphikLCG-Black-otf.css") format("otf"), url("GraphikLCG-Black_rubl-ttf.css") format("ttf"), url("GraphikLCG-Black_rubl-woff.css") format("woff"); }
-
-
-
-
 html,
 body {
   height: 100%;
-margin: 0;}
-// !!! for full screen width
-.container.static-page-wrapper {
-            margin: 0;
-    width: 100%;
-    padding: 0;
-          }
-
-#static-page-content {
-  height: 100%;
-  width: 100%;
- 
+width: 100%;
+margin: 0;
+font-family: 'Fira Sans', sans-serif;
+}
 
 ul {
 display: block;
@@ -56,5 +32,127 @@ list-style: none; }
 
 * {
 box-sizing: border-box; }
-  
+
+.maincontent {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  position: relative;
+
+  #map {
+    width: 98%;
+    height: 98%;
+    position: absolute;
   }
+}
+.pop-form {
+  position: relative;
+  width: 380px;
+  height: 520px;
+  border-radius: 8px;
+  background-color: #fff;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+p, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.pop-header {
+  background-color: #ff8663;
+  height: 44px;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  
+  .crossClose {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 14px;
+    right: 5%;
+  }
+
+  .pop-adress p {
+    background-image: url('../img/smallMarker.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 11px;
+    display: block;
+    padding-left: 15px;
+    line-height: 16px;
+  }
+}
+.mainpart {
+  margin: 0 15px;
+  height: 155px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 5px;
+  border-bottom: 1px solid lightgrey;
+  .feedback-container  {
+    height: fit-content;
+  }
+  .feedback {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  .fb-name {
+    margin-right: 20px;
+  }
+}
+
+.fb-datePlace {
+  color: grey;
+}
+
+.form-title {
+  color: #ff8663;
+}
+.form {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
+}
+.addButton {
+  width: 88px;
+  height: 30px;
+  background-color: #ff8663;
+  color: #fff;
+  align-self: flex-end;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.form-input {
+  border: 1px solid lightgray;
+  height: 34px;
+  border-radius: 30px;
+  line-height: 22px;
+  font-size: 15px;
+  padding: 0 17px;
+}
+.form-impress {
+  height: 130px;
+  border-radius: 17px;
+  padding: 5px 17px;
+  
+}
+
+p {
+  line-height: 22px;
+  font-size: 15px;
+}
+.addButton {
+  font-size: 12px;
+}

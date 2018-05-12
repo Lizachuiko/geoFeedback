@@ -1,7 +1,52 @@
 extends ../template
 
 block variables
-    - var title = 'Добро пожаловать'
+    - var title = 'geoFeedback'
 
 block content
-    #static-page-content
+    .maincontent
+        #map
+        .pop-form
+            .pop-header
+                a.crossClose(href="#")
+                    img(src="img/smallCross.png", alt="закрыть")
+                .pop-adress
+                    p Невский пр., 78, Санкт-Петербург, 191025
+            .mainpart
+                .feedback-container
+                    .feedback.feedback-1
+                        .fb-item.fb-name
+                            p svetlana
+                        .fb-item.fb-datePlace
+                            p Шоколадница 13.12.2015
+                        .fb-item.fb-text
+                            p Очень хорошее место!
+                    .feedback.feedback-2
+                        .fb-item.fb-name
+                            p max
+                        .fb-item.fb-datePlace
+                            p Шоколадница 13.12.2015
+                        .fb-item.fb-text
+                            p Очень хорошее место!
+                    .feedback.feedback-2
+                        .fb-item.fb-name
+                            p max
+                        .fb-item.fb-datePlace
+                            p Шоколадница 13.12.2015
+                        .fb-item.fb-text
+                            p Очень хорошее место!
+                    .feedback.feedback-2
+                        .fb-item.fb-name
+                            p max
+                        .fb-item.fb-datePlace
+                            p Шоколадница 13.12.2015
+                        .fb-item.fb-text
+                            p Очень хорошее место!
+            form.form(name='form1')
+                .form-title
+                    h2 ВАШ ОТЗЫВ
+                input.form-input.form-name(name="name" type="text" placeholder="Ваше имя")
+                input.form-input.form-place(name="place" type="text" placeholder="Укажите место")
+                textarea.form-input.form-impress(name="impress", cols="30", rows="5" placeholder="Поделитесь впечатлениями")
+                button.addButton(type="submit") Добавить
+                
